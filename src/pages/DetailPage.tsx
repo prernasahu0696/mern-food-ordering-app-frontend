@@ -121,6 +121,7 @@ const DetailPage = () => {
           <span className="text-2xl font-bold tracking-tight">Menu</span>
           {restaurant.menuItems.map((menuItem, index) => (
             <MenuItemComponent
+              key={index}
               menuItem={menuItem}
               addToCart={() => addToCart(menuItem)}
             />
